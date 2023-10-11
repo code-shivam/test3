@@ -12,8 +12,6 @@ function Login({ setIslogin, isLogin }) {
   const loginHandel = (e) => {
     e.preventDefault();
     if (password && user) {
-      console.log(password);
-      console.log(definepassword);
       if (password.match(passwordRejex) && password.length > 7) {
         if (password === definepassword) {
           if (user == defineuser) {
